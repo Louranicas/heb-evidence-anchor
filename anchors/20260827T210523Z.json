@@ -1,0 +1,11 @@
+{
+  "schema": "heb.external-anchor.v1",
+  "anchored_utc": "2026-08-27T21:05:23Z",
+  "branch": "iteration-06/residual-6-closure",
+  "head_commit": "0868cd86d352b48e534fe0ce4b3058929b6c31da",
+  "head_tree": "29eadcede32b6f4b7cad510998497d72e9a9fa1a",
+  "manifest_sha256": "46fc20451a6fd466c4aa4f56736df40abda5be75501856c371f7f8a4537eaca6",
+  "digest_leaves": 1309,
+  "digest_merkle_root": "0d93d3368b3e6e4a806921eee0e87c08cbe7d258902b77238dccb5ea345d1e3c",
+  "discloses": "hashes only -- no paths, no filenames, no content"
+}
