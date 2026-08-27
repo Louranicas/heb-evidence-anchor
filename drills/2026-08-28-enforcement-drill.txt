@@ -1,0 +1,43 @@
+
+========== PROVISION ==========
+cloned tip: 6a5355466d95855f2a0866c5ff0521b28172befb
+
+========== STEP 1 (append / fast-forward)  [expect GREEN] ==========
+To https://github.com/Louranicas/heb-evidence-anchor.git
+   6a53554..81d1cce  main -> main
+server tip now: 81d1cce7012288788a27de6b65435f56bc0aa8b6
+
+========== STEP 2 (force-push / history rewrite)  [expect RED] ==========
+remote: 
+remote: - Cannot force-push to this branch        
+remote: 
+To https://github.com/Louranicas/heb-evidence-anchor.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/Louranicas/heb-evidence-anchor.git'
+server tip after: 81d1cce7012288788a27de6b65435f56bc0aa8b6
+unchanged vs append? YES
+
+========== STEP 3 (branch deletion)  [expect RED] ==========
+To https://github.com/Louranicas/heb-evidence-anchor.git
+ ! [remote rejected] main (refusing to delete the current branch: refs/heads/main)
+error: failed to push some refs to 'https://github.com/Louranicas/heb-evidence-anchor.git'
+server tip after: 81d1cce7012288788a27de6b65435f56bc0aa8b6
+branch still present? YES
+
+========== STEP 4 (non-linear history / merge commit)  [expect RED] ==========
+remote: 
+remote:   907c5b16b442fcc9e522499f2b138b85b42fa0c1        
+remote: 
+To https://github.com/Louranicas/heb-evidence-anchor.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/Louranicas/heb-evidence-anchor.git'
+server tip after: 81d1cce7012288788a27de6b65435f56bc0aa8b6
+unchanged vs append? YES
+
+========== STEP 5 (cold clone read-back)  [expect GREEN] ==========
+cold tip:  81d1cce7012288788a27de6b65435f56bc0aa8b6
+append tip:81d1cce7012288788a27de6b65435f56bc0aa8b6
+byte-match: YES
+anchor record intact: 1 record(s)
+
+========== DRILL COMPLETE ==========
